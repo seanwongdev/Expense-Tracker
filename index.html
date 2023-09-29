@@ -11,6 +11,68 @@
       href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
     />
     <title>Monthly Expense Tracker</title>
+
   </head>
-  <body></body>
+  <body>
+    <div class="container text-center mt-3">
+      <h1>Expense Tracker</h1>
+      <div class="monthly">
+
+      </div>
+
+        Add a New Item:
+      <form class="form-input">
+        <div class="form-container">
+          <div>
+            <label for="p-type">Type:</label>
+            <select name="p-type" id="p-type" class="p-type">
+              <option value="debit-card">Debit Card</option>
+              <option value="credit-card">Credit Card</option>
+              <option value="pay-now">Pay Now</option>
+              <option value="cash">Cash</option>
+              <option value="giro">Giro</option>
+            </select>
+          </div>
+          <div>
+            <label for="p-name">Name:</label>
+            <input type="text" id="p-name" name="p-name" class="p-name">
+          </div>
+          <div>
+            <label for="p-date">Date:</label>
+            <input type="date" id="p-date" name="p-date" class="p-date">
+          </div>
+          <div>
+            <label for="p-amount">Amount:</label>
+            <input type="text" id="p-amount" name="p-amount" class="p-amount">
+          </div>
+        </div>
+        <input class="mt-3 mb-4 btn btn-secondary" type="submit" value="Add Expense">
+      </form>
+
+      <div class="expense-container">
+        <table class="table table-light table-striped expense-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+            <!-- <tr>
+              <td>1</td>
+              <td>Type</td>
+              <td>Name</td>
+              <td>Date</td>
+              <td>Amount</td>
+            </tr> -->
+
+        </table>
+      </div>
+
+
+
+    </div>
+  </body>
 </html>
