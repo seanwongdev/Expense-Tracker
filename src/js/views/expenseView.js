@@ -1,7 +1,9 @@
-class ExpenseView {
+import View from './View.js'
+
+class ExpenseView extends View {
   _data
   _parentElement = document.querySelector('.expense-table')
-  _errorMessage = "Please fill in all the fields before proceeding"
+
 
   render(data) {
     console.log(data);
@@ -22,9 +24,6 @@ class ExpenseView {
     this._parentElement.insertAdjacentHTML('beforeend', template)
   }
 
-  _renderError(message = this._errorMessage) {
-    alert(message);
-  }
 
 
   _generateTemplate() {

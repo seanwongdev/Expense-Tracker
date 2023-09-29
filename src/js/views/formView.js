@@ -1,6 +1,8 @@
-class FormView {
+import View from './View.js'
+
+class FormView extends View {
   _parentElement = document.querySelector('.form-input')
-  _errorMessage = "Please fill in all the fields before proceeding"
+
 
   addHandlerForm(handler) {
     this._parentElement.addEventListener('submit', function(e) {
@@ -13,9 +15,6 @@ class FormView {
     this._parentElement.reset();
   }
 
-  _renderError(message = this._errorMessage) {
-    alert(message);
-  }
 
   getFormValues() {
     const type = this._parentElement.querySelector('.p-type').value
