@@ -32,10 +32,16 @@ const showMonthly = function () {
 
 }
 
+const controlRefresh = function () {
+  console.log('clicked')
+  model.clearExpenses();
+}
+
 const init = function () {
 
   controlInitial();
   formView.addHandlerForm(controlExpenses)
+  monthlyView.addHandlerRefresh(controlRefresh)
 }
 
 init();
