@@ -14,7 +14,9 @@ This is a JavaScript mini project done without any frameworks to practice concep
 
 
 **Getting Started**
-npm run start
+since you need parcel for this.. just run in your terminal
+1. "npm parcel install -D"  
+2. "npm run start"  
 
 Open http://localhost:1234 with your browser to see the result.
 
